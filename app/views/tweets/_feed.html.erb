@@ -24,6 +24,7 @@
         <small><%= tweet.user.username %></small>
         <p><%= tweet.tweet %></p>
         </div>
+        <% if user_signed_in? %>
         <nav class="level-left is-mobile">
         <%= link_to tweet, class:"level-item" do %>
           <span class="icon">
@@ -41,6 +42,7 @@
           </span>
         <% end %>
         </nav>
+        <% end %>
       </div>
     </article>
   </div>
